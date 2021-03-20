@@ -1,0 +1,226 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 AppleColorEmoji;}
+{\colortbl;\red255\green255\blue255;\red70\green137\blue204;\red23\green23\blue23;\red202\green202\blue202;
+\red202\green202\blue202;\red23\green23\blue23;}
+{\*\expandedcolortbl;;\cssrgb\c33725\c61176\c83922;\cssrgb\c11765\c11765\c11765;\cssrgb\c83137\c83137\c83137;
+\cssrgb\c83137\c83137\c83137;\cssrgb\c11765\c11765\c11765;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+4 List Randomizasions\
+\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf4 \cb3 \
+4.1 Random person pay the bill from List\
+import random\cb1 \
+\cb3 # Split string method\cb1 \
+\cb3 names_string = input("Give me everybody's names, separated by a comma. ")\cb1 \
+\cb3 names = names_string.split(", ")\cb1 \
+\cb3 # 
+\f1 \uc0\u55357 \u57000 
+\f0  Don't change the code above 
+\f1 \uc0\u55357 \u56390 
+\f0 \cb1 \
+\
+\cb3 #Write your code below this line 
+\f1 \uc0\u55357 \u56391 
+\f0 \cb1 \
+\
+\cb3 names_length  = int(len(names))\cb1 \
+\cb3 random_number = random.randint(0,names_length-1)\cb1 \
+\cb3 selected= names[random_number]\cb1 \
+\
+\cb3 print(f"\{selected\} is going to buy milk today")\cb1 \
+\
+\
+\
+==\
+\
+Treasure Map difficulty - High\
+\cb3 # 
+\f1 \uc0\u55357 \u57000 
+\f0  Don't change the code below 
+\f1 \uc0\u55357 \u56391 
+\f0 \cb1 \
+\cb3 row1 = ["
+\f1 \uc0\u11036 \u65039 
+\f0 ","
+\f1 \uc0\u11036 \u65039 
+\f0 ","
+\f1 \uc0\u11036 \u65039 
+\f0 "]\cb1 \
+\cb3 row2 = ["
+\f1 \uc0\u11036 \u65039 
+\f0 ","
+\f1 \uc0\u11036 \u65039 
+\f0 ","
+\f1 \uc0\u11036 \u65039 
+\f0 "]\cb1 \
+\cb3 row3 = ["
+\f1 \uc0\u11036 \u65039 
+\f0 ","
+\f1 \uc0\u11036 \u65039 
+\f0 ","
+\f1 \uc0\u11036 \u65039 
+\f0 "]\cb1 \
+\cb3 map = [row1, row2, row3]\cb1 \
+\cb3 print(f"\{row1\}\\n\{row2\}\\n\{row3\}")\cb1 \
+\cb3 position = input("Where do you want to put the treasure? ")\cb1 \
+\cb3 # 
+\f1 \uc0\u55357 \u57000 
+\f0  Don't change the code above 
+\f1 \uc0\u55357 \u56390 
+\f0 \cb1 \
+\cb3 12\cb1 \
+\cb3 #Write your code below this row 
+\f1 \uc0\u55357 \u56391 
+\f0 \cb1 \
+\cb3 horizontal = int(position[0])\cb1 \
+\cb3 vertical=int(position[1])\cb1 \
+\
+\
+\cb3 selected_row = map[vertical-1]\cb1 \
+\cb3 selected_row[horizontal-1] = "X"\cb1 \
+\
+\
+\cb3 #Write your code above this row 
+\f1 \uc0\u55357 \u56390 
+\f0 \cb1 \
+\
+\cb3 # 
+\f1 \uc0\u55357 \u57000 
+\f0  Don't change the code below 
+\f1 \uc0\u55357 \u56391 
+\f0 \cb1 \
+\cb3 print(f"\{row1\}\\n\{row2\}\\n\{row3\}")\cb1 \
+===\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb6 \outl0\strokewidth0 \strokec5 # 
+\f1 \uc0\u55357 \u57000 
+\f0  Don't change the code below 
+\f1 \uc0\u55357 \u56391 
+\f0 \cb1 \
+\cb6 row1 = ["
+\f1 \uc0\u11036 \u65039 
+\f0 ","
+\f1 \uc0\u11036 \u65039 
+\f0 ","
+\f1 \uc0\u11036 \u65039 
+\f0 "]\cb1 \
+\cb6 row2 = ["
+\f1 \uc0\u11036 \u65039 
+\f0 ","
+\f1 \uc0\u11036 \u65039 
+\f0 ","
+\f1 \uc0\u11036 \u65039 
+\f0 "]\cb1 \
+\cb6 row3 = ["
+\f1 \uc0\u11036 \u65039 
+\f0 ","
+\f1 \uc0\u11036 \u65039 
+\f0 ","
+\f1 \uc0\u11036 \u65039 
+\f0 "]\cb1 \
+\cb6 map = [row1, row2, row3]\cb1 \
+\cb6 print(f"\{row1\}\\n\{row2\}\\n\{row3\}")\cb1 \
+\cb6 position = input("Where do you want to put the treasure? ")\cb1 \
+\cb6 # 12 - 1st column and 2nd row\cb1 \
+\cb6 # 
+\f1 \uc0\u55357 \u57000 
+\f0  Don't change the code above 
+\f1 \uc0\u55357 \u56390 
+\f0 \cb1 \
+\
+\cb6 #Write your code below this row 
+\f1 \uc0\u55357 \u56391 
+\f0 \cb1 \
+\cb6 horizontal = int(position[0]) #column1\cb1 \
+\cb6 vertical=int(position[1])   #row2\cb1 \
+\
+\cb6 print(horizontal) #1st column\cb1 \
+\cb6 print(vertical) #2nd row \cb1 \
+\
+\cb6 selected_row = map[vertical-1]   #2-1=1\cb1 \
+\cb6 # 1 means second row gets selected-vertically\cb1 \
+\
+\cb6 selected_row[horizontal-1] = "X" #1-1=0\cb1 \
+\cb6 # 1 means first column gets selected-horizontally\cb1 \
+\
+\cb6 #Write your code above this row 
+\f1 \uc0\u55357 \u56390 
+\f0 \cb1 \
+\
+\cb6 # 
+\f1 \uc0\u55357 \u57000 
+\f0  Don't change the code below 
+\f1 \uc0\u55357 \u56391 
+\f0 \cb1 \
+\cb6 print(f"\{row1\}\\n\{row2\}\\n\{row3\}")\cb1 \
+\pard\pardeftab720\sl540\partightenfactor0
+\cf4 \outl0\strokewidth0 ===\
+\
+Game \
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb6 \outl0\strokewidth0 \strokec5 import random\cb1 \
+\
+\cb6 rock = '''\cb1 \
+\cb6     _______\cb1 \
+\cb6 ---'   ____)\cb1 \
+\cb6       (_____)\cb1 \
+\cb6       (_____)\cb1 \
+\cb6       (____)\cb1 \
+\cb6 ---.__(___)\cb1 \
+\cb6 '''\cb1 \
+\
+\cb6 paper = '''\cb1 \
+\cb6     _______\cb1 \
+\cb6 ---'   ____)____\cb1 \
+\cb6           ______)\cb1 \
+\cb6           _______)\cb1 \
+\cb6          _______)\cb1 \
+\cb6 ---.__________)\cb1 \
+\cb6 '''\cb1 \
+\
+\cb6 scissors = '''\cb1 \
+\cb6     _______\cb1 \
+\cb6 ---'   ____)____\cb1 \
+\cb6           ______)\cb1 \
+\cb6        __________)\cb1 \
+\cb6       (____)\cb1 \
+\cb6 ---.__(___)\cb1 \
+\cb6 '''\cb1 \
+\cb6 game_images = [rock, paper, scissors]\cb1 \
+\
+\cb6 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\\n"))\cb1 \
+\cb6 print(game_images[user_choice])\cb1 \
+\
+\cb6 computer_choice = random.randint(0, 2)\cb1 \
+\cb6 print("Computer chose:")\cb1 \
+\cb6 print(game_images[computer_choice])\cb1 \
+\
+\cb6 if user_choice >= 3 or user_choice < 0: \cb1 \
+\cb6   print("You typed an invalid number, you lose!") \cb1 \
+\cb6 elif user_choice == 0 and computer_choice == 2:\cb1 \
+\cb6   print("You win!")\cb1 \
+\cb6 elif computer_choice == 0 and user_choice == 2:\cb1 \
+\cb6   print("You lose")\cb1 \
+\cb6 elif computer_choice > user_choice:\cb1 \
+\cb6   print("You lose")\cb1 \
+\cb6 elif user_choice > computer_choice:\cb1 \
+\cb6   print("You win!")\cb1 \
+\cb6 elif computer_choice == user_choice:\cb1 \
+\cb6   print("It's a draw")\cb1 \
+\
+\cb6 ####### Debugging challenge: #########\cb1 \
+\cb6 #Try running this code and type 5.\cb1 \
+\cb6 #It will give you an IndexError and point to line 32 as the issue.\cb1 \
+\cb6 #But on line 38 we are trying to prevent a crash by detecting\cb1 \
+\cb6 #any numbers great than or equal to 3 or less than 0.\cb1 \
+\cb6 #So what's going on?\cb1 \
+\cb6 #Can you debug the code and fix it?\cb1 \
+\cb6 #Solution: https://repl.it/@appbrewery/rock-paper-scissors-debugged-end\cb1 \
+\pard\pardeftab720\sl540\partightenfactor0
+\cf4 \outl0\strokewidth0 \
+}
