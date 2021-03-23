@@ -1,0 +1,74 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red202\green202\blue202;\red23\green23\blue23;}
+{\*\expandedcolortbl;;\cssrgb\c83137\c83137\c83137;\cssrgb\c11765\c11765\c11765;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Hangman Game\
+\
+#Step 1 \cb1 \
+\cb3 import random\cb1 \
+\
+\cb3 word_list = ["aardvark", "baboon", "camel"]\cb1 \
+\
+\cb3 #TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.\cb1 \
+\cb3 word_list_len = len(word_list)\cb1 \
+\cb3 chosen_word = random.choice(word_list)\cb1 \
+\cb3 print(f"Selected word: \{chosen_word\}")\cb1 \
+\
+\
+\cb3 #TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.\cb1 \
+\cb3 guess = input("guess a letter: ").lower()\cb1 \
+\
+\
+\cb3 #TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.\cb1 \
+\cb3 for char in chosen_word:\cb1 \
+\cb3   if(guess == char ):\cb1 \
+\cb3     print("Correct")\cb1 \
+\cb3   else:\cb1 \
+\cb3     print("Wrong")  \cb1 \
+\
+\
+====\
+\cb3 #Step 2\cb1 \
+\
+\cb3 import random\cb1 \
+\cb3 word_list = ["aardvark", "baboon", "camel"]\cb1 \
+\cb3 chosen_word = random.choice(word_list)\cb1 \
+\cb3 word_length = len(chosen_word)\cb1 \
+\cb3 #Testing code\cb1 \
+\cb3 print(f'Pssst, the solution is \{chosen_word\}.')\cb1 \
+\
+\cb3 #TODO-1: - Create an empty List called display.\cb1 \
+\cb3 #For each letter in the chosen_word, add a "_" to 'display'.\cb1 \
+\cb3 #So if the chosen_word was "apple", display should be ["_", "_", "_", "_", "_"] with 5 "_" representing each letter to guess.\cb1 \
+\cb3 display=[]\cb1 \
+\cb3 chosen_word_len = word_length\cb1 \
+\cb3 # for _ in range(chosen_word)\cb1 \
+\cb3 for char in chosen_word: \cb1 \
+\cb3   display += "_"\cb1 \
+\cb3 print(display)\cb1 \
+\cb3 guess = input("Guess a letter: ").lower()\cb1 \
+\
+\cb3 #TODO-2: - Loop through each position in the chosen_word;\cb1 \
+\cb3 #If the letter at that position matches 'guess' then reveal that letter in the display at that position.\cb1 \
+\cb3 #e.g. If the user guessed "p" and the chosen word was "apple", then display should be ["_", "p", "p", "_", "_"].\cb1 \
+\cb3 for position in range(word_length):\cb1 \
+\cb3   letter = chosen_word[position]\cb1 \
+\cb3   if letter == guess:\cb1 \
+\cb3     display[position]=letter\cb1 \
+\cb3 print(display)    \cb1 \
+\cb3 #TODO-3: - Print 'display' and you should see the guessed letter in the correct position and every other letter replace with "_".\cb1 \
+\cb3 #Hint - Don't worry about getting the user to guess the next letter. We'll tackle that in step 3.\cb1 \
+\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf2 \
+\
+\
+====\
+\
+\
+}
