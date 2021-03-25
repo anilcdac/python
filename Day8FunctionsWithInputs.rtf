@@ -1,0 +1,88 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 AppleColorEmoji;}
+{\colortbl;\red255\green255\blue255;\red202\green202\blue202;\red23\green23\blue23;}
+{\*\expandedcolortbl;;\cssrgb\c83137\c83137\c83137;\cssrgb\c11765\c11765\c11765;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 # Simple Function\cb1 \
+\cb3 def greet():\cb1 \
+\cb3   print("Hi Anil")\cb1 \
+\cb3   print("Good Morning")\cb1 \
+\cb3   print("How are you")\cb1 \
+\
+\cb3 greet()  \cb1 \
+\
+\cb3 # Function that allows for input\cb1 \
+\cb3 def greet_with_name(name):\cb1 \
+\cb3   print("Hi "+ name)\cb1 \
+\cb3   print(f"Good Morning \{name\}")\cb1 \
+\cb3   print(f"How are you \{name\}")\cb1 \
+\
+\cb3 greet_with_name("Angela")  \cb1 \
+===\
+\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf2 \cb3 #Simple Function\cb1 \
+\cb3 def greet():\cb1 \
+\cb3   print("Hello Angela")\cb1 \
+\cb3   print("How do you do Jack Bauer?")\cb1 \
+\cb3   print("Isn't the weather nice today?")\cb1 \
+\cb3 greet()\cb1 \
+\
+\cb3 #Function that allows for input\cb1 \
+\cb3 #'name' is the parameter.\cb1 \
+\cb3 #'Jack Bauer' is the argument.\cb1 \
+\cb3 def greet_with_name(name):\cb1 \
+\cb3   print(f"Hello \{name\}")\cb1 \
+\cb3   print(f"How do you do \{name\}?")\cb1 \
+\cb3 greet_with_name("Jack Bauer")\cb1 \
+\
+\cb3 #Functions with more than 1 input\cb1 \
+\cb3 def greet_with(name, location):\cb1 \
+\cb3   print(f"Hello \{name\}")\cb1 \
+\cb3   print(f"What is it like in \{location\}?")\cb1 \
+\
+\cb3 #Calling greet_with() with Positional Arguments\cb1 \
+\cb3 greet_with("Jack Bauer", "Nowhere")\cb1 \
+\cb3 #vs.\cb1 \
+\cb3 greet_with("Nowhere", "Jack Bauer")\cb1 \
+\
+\
+\cb3 #Calling greet_with() with Keyword Arguments\cb1 \
+\cb3 greet_with(location="London", name="Angela")\cb1 \
+\
+\
+==\
+\cb3 #Write your code below this line 
+\f1 \uc0\u55357 \u56391 
+\f0 \cb1 \
+\cb3 import math\cb1 \
+\
+\cb3 def paint_calc(height, width, cover):\cb1 \
+\cb3   area = height * width\cb1 \
+\cb3   number_of_cans = math.ceil(area / cover)\cb1 \
+\cb3   print(f"You will need \{number_of_cans\} cans")\cb1 \
+\
+\cb3 #Write your code above this line 
+\f1 \uc0\u55357 \u56390 
+\f0 \cb1 \
+\cb3 # Define a function called paint_calc() so that the code below works.   \cb1 \
+\
+\cb3 # 
+\f1 \uc0\u55357 \u57000 
+\f0  Don't change the code below 
+\f1 \uc0\u55357 \u56391 
+\f0 \cb1 \
+\cb3 test_h = int(input("Height of wall: "))\cb1 \
+\cb3 test_w = int(input("Width of wall: "))\cb1 \
+\cb3 coverage = 5\cb1 \
+\cb3 paint_calc(height=test_h, width=test_w, cover=coverage)\cb1 \
+\
+\
+\
+\
+==\
+}
